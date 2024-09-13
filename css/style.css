@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+@import url(reset.css);
+
+h1, h2, h3, h4, h5, h6, .button{
+    font-family: "Big Shoulders Display";
+}
+
+p{
+    font-family: Outfit;
+}
+
+.promo{
+    display: flex;
+
+    max-width: 1440px;
+}
+
+.promo .bg{
+    display: flex;
+}
+.promo .bg .dark_bg{
+    background: #000;
+    width: 450px;
+    height: 800px;
+}
+
+.promo_content{
+    width: 1110px;
+
+    display: flex;
+    justify-content: space-between;
+    
+    margin-left: -825px;
+    margin-top: 190px;
+}
+.promo_content div h1{
+    position: absolute;
+
+    width: 514px;
+
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 88px;
+
+    text-transform: uppercase;
+
+    color: #000;
+}
+.promo_content div h1:before{
+    content: attr(data-heading);
+    overflow: hidden;
+    position: absolute;
+    width: 285px;
+    color: #fff;
+}
+.promo_content div p{
+    width: 350px;
+
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 32px;
+
+    color: #444444;
+}
+.promo_content div .button{
+    margin-top: 64px;
+
+    display: flex;
+}
+.promo_content div .button a{
+    padding: 24px 35px;
+
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+
+    letter-spacing: 3.63636px;
+    text-decoration: none;
+
+    color: #FFFFFF;
+
+    background: #151515;
+}
+.promo_content div .button img{
+    padding: 24px;
+
+    background: #D5966C;
+}
+
+.promo_content div .button a:hover{
+    background: #D5966C;
+}   
+.promo_content div .button a:hover+img{
+    background: #151515;
+}
+
+main{
+    max-width: 1110px;
+
+    margin: 180px auto;
+}
+
+main .h2{
+    width: 350px;
+
+    padding-bottom: 32px;
+
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 60px;
+
+    text-transform: uppercase;
+}
+main .p{
+    width: 350px;
+
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+main .main_1{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+main .main_2{
+    margin-top: 30px;
+    margin-bottom: 180px;
+
+    display: flex;
+
+    justify-content: space-between;
+}
+
+main .main_2 div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .main_2 div div{
+    margin-top: 30px;
+    padding: 65px 47px 64px 48px;
+
+    color: #fff;
+
+    background: #151515;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 80px 165px;
+
+    color: #fff;
+    background: #151515;
+}
+footer h3{
+    font-size: 30px;
+}
+footer p{
+    width: 430px;
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+footer .icons svg path:hover{
+    cursor: pointer;
+    fill: #D5966C;
+}
+footer .icons svg:not(:last-child){
+    margin-right: 20px;
+}
